@@ -1,4 +1,5 @@
 <?php
+include "../connection.php";
 
 class bukuModel extends connection{
 

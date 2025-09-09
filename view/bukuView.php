@@ -17,14 +17,19 @@ class bukuView{
         }
         else {
             ?>
-            <table border="1">
-                <tr>
-                    <th>Id</th>
-                    <th>Judul</th>
-                    <th>Penulis</th>
-                    <th>Tahun Terbit</th>
-                </tr>
-                <?php $buku->getAll(); ?>
+            <table class="table m-4">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Judul</th>
+                        <th scope="col">Penulis</th>
+                        <th scope="col">Tahun Terbit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $buku->getAll(); ?>
+                </tbody>
+                
             </table>
             <?php
         }
@@ -36,11 +41,14 @@ class bukuView{
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>Buku Management</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         </head>
         <body>
-            <h1>data buku</h1>
+            <h1 class="pt-4 ps-4">data buku</h1>
             <?php $this->SelectData() ?>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         </body>
         </html>
     <?php

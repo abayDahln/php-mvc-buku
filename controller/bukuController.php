@@ -20,13 +20,7 @@ class bukuController{
     public function getById(){
         if (isset($_GET['id']) && $_GET['id'] != ""){
             $model = new bukuModel();
-            $data = $model->getById($_GET['id']);
-            ?>
-            <p><?php echo $data['id']; ?></p>
-            <p><?php echo $data['judul'];?></p>
-            <p><?php echo $data['penulis'];?></p>
-            <p><?php echo $data['tahun_terbit'];?></p>
-            <?php
+            return $data = $model->getById($_GET['id']);
         }
         else{
             return;

@@ -1,5 +1,5 @@
 <?php
-
+include "../model/bukuModel.php";
 class bukuController{
 
     public function getAll(){

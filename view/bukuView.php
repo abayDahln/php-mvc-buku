@@ -9,10 +9,11 @@ class bukuView{
         if (isset($_GET['id']) && $_GET['id'] != ""){
             $data = $buku->getById();
             ?>
-            <p><?php echo "id ke " . $data['id'] . ":"; ?></p>
-            <p><?php echo "Judul = " . $data['judul'];?></p>
-            <p><?php echo "Penulis = " . $data['penulis'];?></p>
-            <p><?php echo "Tahun Terbit = " . $data['tahun_terbit'];?></p>
+            <br>
+            <p class="ms-4"><?php echo "id ke " . $data['id'] . ":"; ?></p>
+            <p class="ms-4"><?php echo "Judul = " . $data['judul'];?></p>
+            <p class="ms-4"><?php echo "Penulis = " . $data['penulis'];?></p>
+            <p class="ms-4"><?php echo "Tahun Terbit = " . $data['tahun_terbit'];?></p>
             <?php
         }
         else {
